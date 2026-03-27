@@ -1,189 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MC Prestadora de Serviço - Florianópolis</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
-background:#f5f5f5;
-color:#333;
-}
-
-header{
-background: linear-gradient(135deg,#3a3a3a,#1f1f1f);
-color:white;
-padding:60px 20px;
-text-align:center;
-}
-
-header h1{
-font-size:32px;
-margin-bottom:10px;
-}
-
-header p{
-opacity:0.9;
-}
-
-.whatsapp-btn{
-display:inline-block;
-margin-top:20px;
-padding:14px 25px;
-background:#25D366;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-transition:0.3s;
-}
-
-.whatsapp-btn:hover{
-transform:scale(1.05);
-}
-
-section{
-padding:50px 20px;
-max-width:1100px;
-margin:auto;
-}
-
-.titulo{
-text-align:center;
-font-size:26px;
-margin-bottom:30px;
-}
-
-.servicos{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.galeria{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-}
-
-.galeria img{
-width:100%;
-border-radius:10px;
-height:200px;
-object-fit:cover;
-}
-
-.sobre{
-text-align:center;
-line-height:1.6;
-}
-
-.whatsapp-fixo{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-color:white;
-width:60px;
-height:60px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:28px;
-text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
-}
-
-footer{
-background:#1f1f1f;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-</style>
-
+<title>MC Prestadora de Serviço</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <header>
-<h1>MC Prestadora de Serviço</h1>
-<p>Prestador de serviços em Florianópolis</p>
+<div class="logo">MC Prestadora</div>
 
-<a class="whatsapp-btn" 
-href="https://wa.me/5548984786774" 
-target="_blank">
-Solicitar Orçamento
-</a>
+<nav>
+<a href="#">Início</a>
+<a href="#">Serviços</a>
+<a href="#">Trabalhos</a>
+<a href="#">Contato</a>
+</nav>
 
+<a class="whatsapp-topo" href="#">WhatsApp</a>
 </header>
 
-<section>
-<h2 class="titulo">Serviços</h2>
+<section class="hero">
+<div class="hero-content">
+<h1>MC PRESTADORA DE SERVIÇO</h1>
+<p>Desentupimento • Elétrica • Hidráulica</p>
 
-<div class="servicos">
+<a class="btn-whatsapp">CHAMAR NO WHATSAPP</a>
+</div>
+</section>
+
+<section class="servicos">
+
+<h2>Nossos Serviços</h2>
+
+<div class="grid">
 
 <div class="card">Desentupimento</div>
-<div class="card">Caixa acoplada</div>
-<div class="card">Limpeza caixa d'água</div>
-<div class="card">Elétrica residencial</div>
+<div class="card">Elétrica</div>
 <div class="card">Hidráulica</div>
-<div class="card">Instalação de chuveiro</div>
+<div class="card">Chuveiro</div>
+<div class="card">Caixa d'água</div>
 <div class="card">Marido de aluguel</div>
 
 </div>
+
 </section>
 
-<section>
-<h2 class="titulo">Trabalhos realizados</h2>
+<section class="trabalhos">
+
+<h2>Trabalhos realizados</h2>
 
 <div class="galeria">
-<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=800">
-<img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800">
-<img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=800">
+
+<div class="foto"></div>
+<div class="foto"></div>
+<div class="foto"></div>
+<div class="foto"></div>
+<div class="foto"></div>
+<div class="foto"></div>
+
 </div>
 
 </section>
 
-<section class="sobre">
-<h2 class="titulo">Sobre</h2>
-<p>
-A MC Prestadora de Serviço oferece soluções rápidas e profissionais em
-Florianópolis. Trabalhamos com elétrica, hidráulica, desentupimento,
-instalações e manutenção em geral.
-</p>
+<section class="cta">
+
+<h2>Precisa de atendimento rápido?</h2>
+<a class="btn-whatsapp">Falar no WhatsApp</a>
+
 </section>
 
-<a class="whatsapp-fixo"
-href="https://wa.me/5548984786774"
-target="_blank">
-💬
-</a>
-
-<footer>
-MC Prestadora de Serviço - Florianópolis
-</footer>
+<a class="whatsapp-fixo">WhatsApp</a>
 
 </body>
 </html>
