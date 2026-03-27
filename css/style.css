@@ -230,12 +230,24 @@ text-decoration:none;
 /* ================= MOBILE ================= */
 @media(max-width:768px){
 
-/* HEADER */
 header{
 flex-direction:column;
-padding:15px;
-gap:10px;
-text-align:center;
+padding:10px 15px;
+gap:5px;
+}
+
+/* LOGO */
+.logo img{
+height:40px;
+}
+
+/* MENU */
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:8px;
+font-size:14px;
 }
 
 nav{
