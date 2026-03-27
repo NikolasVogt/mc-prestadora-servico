@@ -53,22 +53,7 @@ font-weight:bold;
 /* HERO */
 
 .hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-
-background-image:
-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url("../imagem/fundo.jpg");
-
-background-size:cover;
-background-position:center;
-
-/* Efeito */
-background-attachment: fixed;
+background-image: url("https://nikolasvogt.github.io/mc-prestadora-servico/imagem/fundo.png");
 }
 
 background:
