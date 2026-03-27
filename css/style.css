@@ -161,3 +161,62 @@ background:#25D366;
 padding:15px;
 border-radius:50px;
 }
+
+/* RESPONSIVO CELULAR */
+@media (max-width: 768px){
+
+header{
+padding:15px 20px;
+flex-direction:column;
+gap:10px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+margin:5px 10px;
+font-size:14px;
+}
+
+.hero{
+padding:0 20px;
+height:90vh;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.btn-whatsapp{
+padding:12px 20px;
+font-size:14px;
+}
+
+.servicos{
+padding:60px 15px;
+}
+
+.servicos h2{
+font-size:26px;
+}
+
+.servico{
+padding:20px;
+}
+
+.galeria{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+.whatsapp-fixo{
+right:15px;
+bottom:15px;
+padding:12px;
+}
+
+}
