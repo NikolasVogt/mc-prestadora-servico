@@ -34,15 +34,14 @@ z-index:1000;
 height:50px;
 }
 
-nav a{
-color:white;
-margin:0 10px;
-text-decoration:none;
+nav{
+display:flex;
+gap:15px;
 }
 
-.contato-topo a{
-color:#25D366;
-font-weight:bold;
+nav a{
+color:white;
+text-decoration:none;
 }
 
 .whatsapp-topo{
@@ -56,6 +55,7 @@ text-decoration:none;
 /* HERO */
 .hero{
 min-height:100vh;
+padding-top:120px;
 
 background-image:
 linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
@@ -68,11 +68,10 @@ background-repeat:no-repeat;
 
 /* BOTÕES HERO */
 .hero-contato{
-margin-top:20px;
 display:flex;
-gap:10px;
+gap:15px;
 justify-content:center;
-flex-wrap:wrap;
+margin-top:20px;
 }
 
 .btn-whatsapp{
@@ -133,19 +132,17 @@ background:white;
 .container-sobre{
 max-width:800px;
 margin:auto;
-text-align:left;
+text-align:center;
 }
 
 .sobre h2{
 font-size:32px;
 margin-bottom:20px;
-text-align:center;
 }
 
 .sobre p{
 margin-bottom:15px;
 line-height:1.6;
-text-align:center;
 }
 
 /* GALERIA */
@@ -224,55 +221,32 @@ text-decoration:none;
 /* ================= MOBILE ================= */
 @media(max-width:768px){
 
+/* HEADER */
 header{
 flex-direction:column;
-padding:10px 15px;
+padding:10px;
 gap:5px;
+position:relative; /* não fica fixo */
 }
 
-/* LOGO */
 .logo img{
 height:40px;
 }
 
 /* MENU */
 nav{
-display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:8px;
 font-size:14px;
-}
-
-nav{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:10px;
-}
-
-.contato-topo{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:5px;
 }
 
 /* HERO */
 .hero{
-padding:220px 20px 80px;
+min-height:60vh;
+padding-top:40px;
 
 background-size:contain;
-background-repeat:no-repeat;
-background-position:center;
-}
-
-.hero h1{
-font-size:26px;
-}
-
-.hero p{
-font-size:16px;
+background-color:#000;
 }
 
 /* BOTÕES */
@@ -288,14 +262,6 @@ width:100%;
 /* GALERIA */
 .galeria{
 grid-template-columns:1fr;
-}
-
-}
-
-@media(max-width:768px){
-
-header{
-position:relative; /* 👈 tira o fixo */
 }
 
 }
