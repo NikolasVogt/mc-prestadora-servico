@@ -235,7 +235,7 @@ scroll-margin-top:90px;
 scroll-behavior:smooth;
 }
 
-  .btn-whatsapp{
+.btn-whatsapp{
 background:#25D366;
 padding:15px 30px;
 display:inline-block;
@@ -245,6 +245,11 @@ color:white;
 text-decoration:none;
 font-weight:bold;
 transition:0.3s;
+}
+
+.btn-whatsapp:hover{
+background:#1ebe5d;
+transform:translateY(-2px);
 }
 
 .btn-whatsapp:hover{
