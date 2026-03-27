@@ -56,20 +56,14 @@ text-decoration:none;
 /* HERO */
 .hero{
 min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-
-padding:180px 20px 80px;
 
 background-image:
-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
 url("../imagem/fundo.png");
 
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
 }
 
 /* BOTÕES HERO */
