@@ -55,10 +55,18 @@ font-weight:bold;
 .hero{
 height:100vh;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 color:white;
+
+background-image:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("../imagem/fundo.jpg");
+
+background-size:cover;
+background-position:center;
+}
 
 background:
 linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
