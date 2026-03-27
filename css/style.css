@@ -37,11 +37,16 @@ border-radius:5px;
 .hero{
 height:100vh;
 display:flex;
+flex-direction:column;
+justify-content:center;
 align-items:center;
-padding:0 40px;
-background:
-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600');
+text-align:center;
+color:white;
+
+background-image:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?q=80&w=1600");
+
 background-size:cover;
 background-position:center;
 }
