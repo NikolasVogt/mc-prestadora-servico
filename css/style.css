@@ -39,9 +39,11 @@ height:100vh;
 display:flex;
 align-items:center;
 padding:0 40px;
-background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-url('../img/bg.jpg');
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600');
 background-size:cover;
+background-position:center;
 }
 
 .hero h1{
