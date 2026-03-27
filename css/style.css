@@ -66,6 +66,9 @@ url("../imagem/fundo.jpg");
 
 background-size:cover;
 background-position:center;
+
+/* Efeito */
+background-attachment: fixed;
 }
 
 background:
