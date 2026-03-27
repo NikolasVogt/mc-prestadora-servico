@@ -97,14 +97,28 @@ border-radius:10px;
 
 /* SOBRE */
 .sobre{
-padding:80px 20px;
-background:white;
+padding:100px 20px;
+background:#f9f9f9;
 text-align:center;
+border-top:1px solid #eee;
+border-bottom:1px solid #eee;
 }
 
-.container{
-max-width:800px;
+.sobre .container{
+max-width:900px;
 margin:auto;
+}
+
+.sobre h2{
+font-size:32px;
+margin-bottom:25px;
+}
+
+.sobre p{
+font-size:18px;
+line-height:1.6;
+margin-bottom:15px;
+color:#444;
 }
 
 /* DIFERENCIAIS */
