@@ -1,79 +1,185 @@
-height:50px;
-}
-
-nav{
-display:flex;
-gap:15px;
-}
-
-nav a{
-color:white;
-margin:0 10px;
-text-decoration:none;
-}
-
-.contato-topo a{
-color:#25D366;
-font-weight:bold;
-}
-
-.whatsapp-topo{
-background:#25D366;
-padding:10px 20px;
-@@ -56,6 +55,7 @@ text-decoration:none;
 /* HERO */
 .hero{
 min-height:100vh;
-padding-top:120px;
+display:flex;
+align-items:flex-end; /* 👈 desce os botões */
+justify-content:center;
+text-align:center;
+color:white;
+
+padding:120px 20px 60px; /* 👈 corrigido (antes tava exagerado) */
 
 background-image:
-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-@@ -68,11 +68,10 @@ background-repeat:no-repeat;
+linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+url("../imagem/fundo.png");
+
+background-size:cover;
+background-position:center 40%; /* 👈 NÃO corta o boneco */
+background-repeat:no-repeat;
+}
 
 /* BOTÕES HERO */
 .hero-contato{
 margin-top:20px;
 display:flex;
-gap:10px;
 gap:15px;
 justify-content:center;
 flex-wrap:wrap;
-margin-top:20px;
 }
 
 .btn-whatsapp{
-@@ -133,19 +132,17 @@ background:white;
+background:#25D366;
+padding:15px 25px;
+color:white;
+border-radius:5px;
+text-decoration:none;
+}
+
+.btn-ligar{
+background:#007BFF;
+padding:15px 25px;
+color:white;
+border-radius:5px;
+text-decoration:none;
+}
+
+/* SERVIÇOS */
+.servicos{
+padding:80px 20px;
+}
+
+.servicos h2{
+font-size:32px;
+margin-bottom:40px;
+text-align:center;
+}
+
+.servicos-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.servico{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+width:300px;
+transition:0.3s;
+text-align:center;
+}
+
+.servico:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* SOBRE */
+.sobre{
+padding:100px 20px;
+background:white;
+}
+
 .container-sobre{
 max-width:800px;
 margin:auto;
-text-align:left;
-text-align:center;
+text-align:center; /* 👈 corrigido */
 }
 
 .sobre h2{
 font-size:32px;
 margin-bottom:20px;
-text-align:center;
 }
 
 .sobre p{
 margin-bottom:15px;
 line-height:1.6;
-text-align:center;
 }
 
 /* GALERIA */
-@@ -224,55 +221,32 @@ text-decoration:none;
+.trabalhos{
+padding:80px 20px;
+}
+
+.trabalhos h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+max-width:1100px;
+margin:auto;
+}
+
+.galeria img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:12px;
+transition:0.3s;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+}
+
+/* CONTATO */
+.contato{
+padding:80px 20px;
+background:#111;
+color:white;
+text-align:center;
+}
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input, textarea{
+padding:12px;
+border:none;
+border-radius:5px;
+}
+
+button{
+background:#25D366;
+color:white;
+padding:15px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* WHATSAPP FIXO */
+.whatsapp-fixo{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+}
+
 /* ================= MOBILE ================= */
 @media(max-width:768px){
 
 /* HEADER */
 header{
 flex-direction:column;
-padding:10px 15px;
 padding:10px;
-gap:5px;
-position:relative; /* não fica fixo */
+gap:10px;
+position:relative; /* 👈 remove fixo no celular */
 }
 
 /* LOGO */
@@ -86,51 +192,38 @@ nav{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:8px;
-font-size:14px;
-}
-
-nav{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
 gap:10px;
-}
-
-.contato-topo{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:5px;
+font-size:14px;
 }
 
 /* HERO */
 .hero{
-padding:220px 20px 80px;
-min-height:60vh;
-padding-top:40px;
+min-height:auto;
+padding:40px 10px;
 
-background-size:contain;
-background-repeat:no-repeat;
+background-size:cover;
 background-position:center;
 }
 
-.hero h1{
-font-size:26px;
-}
-
-.hero p{
-font-size:16px;
-background-color:#000;
-}
-
 /* BOTÕES */
-@@ -291,11 +265,3 @@ grid-template-columns:1fr;
+.hero-contato{
+flex-direction:column;
+gap:10px;
+}
+
+.btn-ligar, .btn-whatsapp{
+width:100%;
+text-align:center;
+}
+
+/* SERVIÇOS */
+.servico{
+width:100%;
+}
+
+/* GALERIA */
+.galeria{
+grid-template-columns:1fr;
 }
 
 }
-
-@media(max-width:768px){
-
-header{
-position:relative; /* 👈 tira o fixo */
