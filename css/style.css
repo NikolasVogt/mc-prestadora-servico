@@ -61,7 +61,7 @@ text-decoration:none;
 .hero{
 min-height:100vh;
 display:flex;
-align-items:flex-end; /* 👈 DESCE O CONTEÚDO */
+align-items:flex-end; 
 justify-content:center;
 text-align:center;
 color:white;
@@ -73,7 +73,7 @@ linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
 url("../imagem/fundo.png");
 
 background-size: cover;
-background-position: center 45%;
+background-position: center 30%;
 background-repeat:no-repeat;
 }
 
