@@ -216,7 +216,7 @@ position:relative;
 
 .hero{
 padding:40px 10px;
-background-size: contain; 
+background-size: 120%;
 background-position: center 20%;
 }
 
