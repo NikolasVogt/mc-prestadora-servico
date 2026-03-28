@@ -39,11 +39,16 @@ gap:10px;
 align-items:center;
 }
 
+/* 🔥 BOTÃO LIGAR AGORA NO TOPO */
 .ligar-topo{
-color:#25D366;
+background:#007BFF;
+padding:10px 20px;
+border-radius:5px;
+color:white;
 text-decoration:none;
 }
 
+/* WHATSAPP TOPO */
 .whatsapp-topo{
 background:#25D366;
 padding:10px 20px;
@@ -56,7 +61,7 @@ text-decoration:none;
 .hero{
 min-height:100vh;
 display:flex;
-align-items:center; /* 👈 ALTERAR AQUI */
+align-items:flex-end; /* 👈 DESCE O CONTEÚDO */
 justify-content:center;
 text-align:center;
 color:white;
@@ -68,16 +73,16 @@ linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
 url("../imagem/fundo.png");
 
 background-size:cover;
-background-position:center 40%;
+background-position:center 70%; /* 👈 MOSTRA MAIS O BONECO */
 background-repeat:no-repeat;
 }
 
-/* BOTÕES */
+/* REMOVE BOTÕES DO HERO */
 .hero-contato{
-display:flex;
-gap:15px;
+display:none;
 }
 
+/* BOTÕES */
 .btn-whatsapp{
 background:#25D366;
 padding:15px 25px;
@@ -121,6 +126,25 @@ width:300px;
 .sobre{
 padding:120px 20px;
 background:white;
+text-align:center; /* 👈 CENTRALIZA */
+}
+
+.container-sobre{
+max-width:800px;
+margin:auto;
+}
+
+.sobre p{
+margin-bottom:10px;
+}
+
+/* 👇 ALINHAR BOTÕES DO SOBRE */
+.sobre-contato{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
 }
 
 /* GALERIA */
@@ -192,12 +216,21 @@ position:relative;
 
 .hero{
 padding:40px 10px;
-background-position:center;
+background-position:center 60%;
 }
 
-.hero-contato{
+.topo-direita{
 flex-direction:column;
 width:100%;
+}
+
+.ligar-topo, .whatsapp-topo{
+width:100%;
+text-align:center;
+}
+
+.sobre-contato{
+flex-direction:column;
 }
 
 .btn-ligar, .btn-whatsapp{
@@ -215,11 +248,7 @@ width:100%;
 
 }
 
-.sobre{
-padding:120px 20px;
-background:white;
-}
-
+/* TITULOS */
 .servicos h2,
 .trabalhos h2,
 .sobre h2{
@@ -227,28 +256,8 @@ text-align:center;
 margin-bottom:40px;
 }
 
-/* ===== AJUSTE TRABALHOS ===== */
+/* TRABALHOS */
 .trabalhos{
 padding:100px 20px;
 text-align:center;
-}
-
-.trabalhos h2{
-text-align:center;
-margin-bottom:40px;
-}
-
-.galeria{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-max-width:1100px;
-margin:auto;
-}
-
-.galeria img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:12px;
 }
