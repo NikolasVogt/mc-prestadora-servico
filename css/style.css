@@ -2,19 +2,19 @@
 .hero{
 min-height:100vh;
 display:flex;
-align-items:flex-end; /* 👈 desce os botões */
+align-items:flex-end;
 justify-content:center;
 text-align:center;
 color:white;
 
-padding:120px 20px 60px; /* 👈 corrigido (antes tava exagerado) */
+padding:120px 20px 60px;
 
 background-image:
 linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
 url("../imagem/fundo.png");
 
 background-size:cover;
-background-position:center 40%; /* 👈 NÃO corta o boneco */
+background-position:center 40%;
 background-repeat:no-repeat;
 }
 
@@ -85,7 +85,7 @@ background:white;
 .container-sobre{
 max-width:800px;
 margin:auto;
-text-align:center; /* 👈 corrigido */
+text-align:center;
 }
 
 .sobre h2{
@@ -171,23 +171,20 @@ color:white;
 text-decoration:none;
 }
 
-/* ================= MOBILE ================= */
+/* MOBILE */
 @media(max-width:768px){
 
-/* HEADER */
 header{
 flex-direction:column;
 padding:10px;
 gap:10px;
-position:relative; /* 👈 remove fixo no celular */
+position:relative;
 }
 
-/* LOGO */
 .logo img{
 height:40px;
 }
 
-/* MENU */
 nav{
 display:flex;
 flex-wrap:wrap;
@@ -196,16 +193,13 @@ gap:10px;
 font-size:14px;
 }
 
-/* HERO */
 .hero{
 min-height:auto;
 padding:40px 10px;
-
 background-size:cover;
 background-position:center;
 }
 
-/* BOTÕES */
 .hero-contato{
 flex-direction:column;
 gap:10px;
@@ -216,12 +210,10 @@ width:100%;
 text-align:center;
 }
 
-/* SERVIÇOS */
 .servico{
 width:100%;
 }
 
-/* GALERIA */
 .galeria{
 grid-template-columns:1fr;
 }
