@@ -56,8 +56,10 @@ text-decoration:none;
 .hero{
 min-height:100vh;
 display:flex;
-align-items:flex-end;
+align-items:center; /* 👈 ALTERAR AQUI */
 justify-content:center;
+text-align:center;
+color:white;
 
 padding:120px 20px 60px;
 
@@ -67,6 +69,7 @@ url("../imagem/fundo.png");
 
 background-size:cover;
 background-position:center 40%;
+background-repeat:no-repeat;
 }
 
 /* BOTÕES */
@@ -102,6 +105,9 @@ display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:25px;
+
+max-width:1100px;   
+margin:auto;        
 }
 
 .servico{
@@ -113,9 +119,8 @@ width:300px;
 
 /* SOBRE */
 .sobre{
-padding:100px 20px;
+padding:120px 20px;
 background:white;
-text-align:center;
 }
 
 /* GALERIA */
@@ -208,4 +213,42 @@ grid-template-columns:1fr;
 width:100%;
 }
 
+}
+
+.sobre{
+padding:120px 20px;
+background:white;
+}
+
+.servicos h2,
+.trabalhos h2,
+.sobre h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+/* ===== AJUSTE TRABALHOS ===== */
+.trabalhos{
+padding:100px 20px;
+text-align:center;
+}
+
+.trabalhos h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+max-width:1100px;
+margin:auto;
+}
+
+.galeria img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:12px;
 }
