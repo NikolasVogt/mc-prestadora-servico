@@ -1,30 +1,9 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
-body{
-background:#f5f5f5;
-}
-
-/* HEADER */
-header{
-position:fixed;
-top:0;
-width:100%;
-background:#111;
-color:white;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 40px;
-z-index:1000;
-}
-
-.logo img{
 height:50px;
+}
+
+nav{
+display:flex;
+gap:15px;
 }
 
 nav a{
@@ -33,204 +12,125 @@ margin:0 10px;
 text-decoration:none;
 }
 
-.topo-botoes{
-display:flex;
-gap:10px;
-}
-
-.ligar-topo{
-background:#007BFF;
-padding:8px 15px;
-border-radius:5px;
-color:white;
-text-decoration:none;
+.contato-topo a{
+color:#25D366;
+font-weight:bold;
 }
 
 .whatsapp-topo{
 background:#25D366;
-padding:8px 15px;
-border-radius:5px;
-color:white;
-text-decoration:none;
-}
-
+padding:10px 20px;
+@@ -56,6 +55,7 @@ text-decoration:none;
 /* HERO */
 .hero{
-height:100vh;
-margin-top:80px;
+min-height:100vh;
+padding-top:120px;
 
-background-image:url("../imagem/fundo.png");
-background-size:cover;
-background-position:center 40%; /* melhor posição */
-background-repeat:no-repeat;
+background-image:
+linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+@@ -68,11 +68,10 @@ background-repeat:no-repeat;
 
-display:flex;
-justify-content:center;
-align-items:flex-end;
-padding-bottom:60px;
-}
-
-/* BOTÕES */
+/* BOTÕES HERO */
 .hero-contato{
+margin-top:20px;
 display:flex;
+gap:10px;
 gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:20px;
 }
 
 .btn-whatsapp{
-background:#25D366;
-padding:15px 25px;
-color:white;
-border-radius:5px;
-text-decoration:none;
-}
-
-.btn-ligar{
-background:#007BFF;
-padding:15px 25px;
-color:white;
-border-radius:5px;
-text-decoration:none;
-}
-
-/* SERVIÇOS */
-.servicos{
-padding:80px 20px;
-}
-
-.servicos h2{
-text-align:center;
-margin-bottom:40px;
-}
-
-.servicos-grid{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:25px;
-}
-
-.servico{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-width:300px;
-text-align:center;
-}
-
-/* SOBRE */
-.sobre{
-padding:80px 20px;
-background:white;
-}
-
+@@ -133,19 +132,17 @@ background:white;
 .container-sobre{
 max-width:800px;
 margin:auto;
+text-align:left;
+text-align:center;
+}
+
+.sobre h2{
+font-size:32px;
+margin-bottom:20px;
+text-align:center;
+}
+
+.sobre p{
+margin-bottom:15px;
+line-height:1.6;
 text-align:center;
 }
 
 /* GALERIA */
-.trabalhos{
-padding:80px 20px;
+@@ -224,55 +221,32 @@ text-decoration:none;
+/* ================= MOBILE ================= */
+@media(max-width:768px){
+
+/* HEADER */
+header{
+flex-direction:column;
+padding:10px 15px;
+padding:10px;
+gap:5px;
+position:relative; /* não fica fixo */
 }
 
-.trabalhos h2{
-text-align:center;
-margin-bottom:30px;
+/* LOGO */
+.logo img{
+height:40px;
 }
 
-.galeria{
+/* MENU */
+nav{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:20px;
-max-width:1100px;
-margin:auto;
-}
-
-.galeria img{
-width:250px;
-height:250px;
-object-fit:cover;
-border-radius:12px;
-}
-
-/* CONTATO */
-.contato{
-padding:80px 20px;
-background:#111;
-color:white;
-text-align:center;
-}
-
-form{
-max-width:500px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-input, textarea{
-padding:12px;
-border:none;
-border-radius:5px;
-}
-
-button{
-background:#25D366;
-color:white;
-padding:15px;
-border:none;
-border-radius:5px;
-cursor:pointer;
-}
-
-/* WHATSAPP FIXO */
-.whatsapp-fixo{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-padding:15px;
-border-radius:50px;
-color:white;
-text-decoration:none;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-
-header{
-flex-direction:column;
-padding:10px;
-gap:10px;
-position:relative; /* tira o bug do fixo */
+gap:8px;
+font-size:14px;
 }
 
 nav{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
+gap:10px;
 }
 
-.topo-botoes{
+.contato-topo{
+display:flex;
 flex-direction:column;
+align-items:center;
+gap:5px;
 }
 
+/* HERO */
 .hero{
-height:auto;
-padding:40px 10px;
+padding:220px 20px 80px;
+min-height:60vh;
+padding-top:40px;
+
+background-size:contain;
+background-repeat:no-repeat;
 background-position:center;
 }
 
-.hero-contato{
-flex-direction:column;
+.hero h1{
+font-size:26px;
 }
 
-.servico{
-width:100%;
+.hero p{
+font-size:16px;
+background-color:#000;
+}
+
+/* BOTÕES */
+@@ -291,11 +265,3 @@ grid-template-columns:1fr;
 }
 
 }
+
+@media(max-width:768px){
+
+header{
+position:relative; /* 👈 tira o fixo */
