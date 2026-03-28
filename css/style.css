@@ -216,8 +216,9 @@ position:relative;
 
 .hero{
 padding:40px 10px;
-background-size: 115%;
-background-position: center 15%;
+min-height: 60vh;
+background-size: 120%;
+background-position: center 20%;
 }
 
 .topo-direita{
