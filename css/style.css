@@ -72,8 +72,8 @@ background-image:
 linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
 url("../imagem/fundo.png");
 
-background-size:cover;
-background-position:center 70%; /* 👈 MOSTRA MAIS O BONECO */
+background-size: cover;
+background-position: center 65%;
 background-repeat:no-repeat;
 }
 
@@ -216,7 +216,8 @@ position:relative;
 
 .hero{
 padding:40px 10px;
-background-position:center 60%;
+background-size: cover;
+background-position: center 20%;
 }
 
 .topo-direita{
