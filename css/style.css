@@ -57,9 +57,8 @@ text-decoration:none;
 
 /*INSTAGRAM TOPO*/
 .instagram-topo {
-    background: #E1306C; /* cor fixa */
+    background: #E1306C;
     color: white;
-    margin-left: 15px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -71,10 +70,16 @@ text-decoration:none;
     color: white;
 }
 
-.topo-direita {
+.topo-direita a {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    flex: 1; /* 🔥 ESSA LINHA resolve tudo */
+    height: 45px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 .topo-direita a {
@@ -258,9 +263,9 @@ flex-direction:column;
 width:100%;
 }
 
-.ligar-topo, .whatsapp-topo{
-width:100%;
-text-align:center;
+.ligar-topo, .whatsapp-topo, .instagram-topo {
+    width:100%;
+    text-align:center;
 }
 
 .sobre-contato{
