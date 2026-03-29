@@ -42,7 +42,6 @@ align-items:center;
 /* 🔥 BOTÃO LIGAR AGORA NO TOPO */
 .ligar-topo{
 background:#007BFF;
-padding:10px 20px;
 border-radius:5px;
 color:white;
 text-decoration:none;
@@ -51,7 +50,6 @@ text-decoration:none;
 /* WHATSAPP TOPO */
 .whatsapp-topo{
 background:#25D366;
-padding:10px 20px;
 border-radius:5px;
 color:white;
 text-decoration:none;
@@ -64,7 +62,6 @@ text-decoration:none;
     margin-left: 15px;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 20px;
     border-radius: 5px;
     transition: 0.3s;
 }
