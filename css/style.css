@@ -57,6 +57,19 @@ color:white;
 text-decoration:none;
 }
 
+/*INSTAGRAM TOPO*/
+.instagram-topo {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.instagram-topo:hover {
+    color: #E1306C; 
+}
+
 /* HERO */
 .hero{
 min-height:110vh;
