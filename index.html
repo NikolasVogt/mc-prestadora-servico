@@ -3,16 +3,30 @@
 <head>
 <meta charset="UTF-8">
 
-   
-<!-- Event snippet for Clique WhatsApp conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18084415725"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18048415725"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
-gtag('config', 'AW-18084415725');
+gtag('config', 'AW-18048415725');
+</script>
+
+<!-- SCRIPT DE CONVERSÃO -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18048415725/CwXACI_noZgcEO3vk55D',
+    'event_callback': callback
+  });
+  return false;
+}
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,10 +61,10 @@ gtag('config', 'AW-18084415725');
 
 <div class="topo-direita">
     <a href="tel:+5548991226237" class="ligar-topo">📞 Ligar Agora</a>
-    <a href="https://api.whatsapp.com/send?phone=5548991226237&text=Olá,%20preciso%20de%20um%20orçamento!"
+    <a href="https://wa.me/5548991226237?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento!"
 class="whatsapp-topo"
 target="_blank"
-onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5548991226237&text=Olá%20preciso%20de%20um%20orçamento');">
+onclick="return gtag_report_conversion('https://wa.me/5548991226237?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento!');">
 WhatsApp
 </a>
     <a href="https://instagram.com/mc_prestadoradeservico" target="_blank" class="instagram-topo">
@@ -65,7 +79,12 @@ WhatsApp
 
 <div class="hero-contato">
 <a href="tel:+5548991226237" class="btn-ligar">📞 LIGAR AGORA</a>
-<a href="https://wa.me/5548991226237" class="btn-whatsapp" target="_blank">WhatsApp</a>
+<a href="https://wa.me/5548991226237?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento!" 
+class="btn-whatsapp" 
+target="_blank"
+onclick="return gtag_report_conversion('https://wa.me/5548991226237?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento!');">
+WhatsApp
+</a>
 </div>
 
 </div>
@@ -101,7 +120,12 @@ WhatsApp
 
 <div class="sobre-contato">
 <a href="tel:+5548991226237" class="btn-ligar">📞 Ligar Agora</a>
-<a href="https://wa.me/5548991226237" class="btn-whatsapp" target="_blank">WhatsApp</a>
+<a href="https://wa.me/5548991226237?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento!" 
+class="btn-whatsapp" 
+target="_blank"
+onclick="return gtag_report_conversion('https://wa.me/5548991226237?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento!');">
+WhatsApp
+</a>
 </div>
 
 </div>
@@ -124,7 +148,6 @@ WhatsApp
 </div>
 </section>
 
-<!-- 🔥 RODAPÉ -->
 <footer class="rodape" id="rodape">
   <div class="rodape-container">
 
@@ -146,9 +169,9 @@ WhatsApp
 </footer>
 
 <a class="whatsapp-fixo"
-href="https://wa.me/5548991226237"
+href="https://wa.me/5548991226237?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento!"
 target="_blank"
-onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5548991226237&text=Olá,%20preciso%20de%20um%20orçamento!');">
+onclick="return gtag_report_conversion('https://wa.me/5548991226237?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento!');">
 WhatsApp
 </a>
 
